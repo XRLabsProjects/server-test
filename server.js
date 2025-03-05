@@ -15,6 +15,11 @@ app.get("/api/", (req, res) => {
     res.send("Server is ready");
 });
 
+app.get("/api/getData", (req, res) => {
+    console.log("Server received call to path /api/getData");
+    res.send("These are the data you are looking for");
+});
+
 app.listen(port, () => {
     console.log(`Server listening at port: ${port}`);
 });
