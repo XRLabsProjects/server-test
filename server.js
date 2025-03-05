@@ -7,7 +7,7 @@ import {
     addData,
 } from "./mongoConnection.js";
 
-const port = process.env.PORT;
+const port = process.env.SERVER_PORT;
 const app = express();
 
 app.use(cors());
